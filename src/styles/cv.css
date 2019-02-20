@@ -1,0 +1,65 @@
+UL {
+    text-align: left;
+    margin-left: 20px;
+}
+
+DIV.cazHead {
+}
+
+DIV.cazHead A:link {
+    text-decoration: none;
+}
+
+DIV.cazHead A:visited {
+    text-decoration: none;
+}
+
+DIV.cazHead A:active {
+    text-decoration: none;
+}
+
+DIV.cazHead A:hover {
+    text-decoration: none;
+}
+
+TABLE {
+    width: 100%;
+}
+
+TD {
+    vertical-align: top;
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+TD.CVside {
+    font-weight: bold;
+}
+
+TD.CVref {
+    text-align: center;
+    width: 50%;
+}
+
+/* CV page */
+
+H1.CVhead {
+    background-color: #b8e;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+P.CV {
+    margin-top: 0px;
+    text-align: left;
+}
+
+H2.CVsubhead {
+    background-color: #b8e;
+    font-size: large;
+    font-weight: bold;
+}
+
+TABLE.personal TD {
+    padding-bottom: 0;
+}

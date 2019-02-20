@@ -1,0 +1,27 @@
+DIV.body {
+    text-align: left;
+}
+
+DIV.messageLink {
+    padding-bottom: 2px;
+}
+
+.messageDate {
+    font-style: italic;
+}
+
+.messageTitle {
+    font-weight: bold;
+}
+
+.messageBackTop {
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.messageBackBottom {
+    font-weight: bold;
+    margin-top: 1em;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+/********** MESSAGE BOARD / GUESTBOOK **********/
+
+DIV.guestMessageAdd {
+    margin-bottom: 1em;
+    background-color: #a7d;
+    font-weight: bold;
+}
+
+DIV.guestHeader { /* header holder */
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+DIV.guestPage { /* page number */
+    float: left;
+    width: 30%;
+    text-align: left;
+    font-size: x-small;
+}
+
+DIV.guestNums { /* links to pages */
+    float: right;
+    width: 30%;
+    text-align: right;
+    font-size: small;
+}
+
+DIV.oneMessage {
+    border: 1pt solid black;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+DIV.messageBlurb {
+    text-align: left;
+    padding: 0.2em;
+}
+
+/* message posted */
+
+DIV.messageName {
+    text-align: left;
+    border-bottom: 1pt solid black;
+    padding: 0.2em;
+    background-color: #b8e;
+}
+
+/* name of person leaving message */
+
+DIV.messageDate {
+    float: right;
+    font-size: smaller;
+    padding-top: 2px;
+}
+
+DIV.messageForm {
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 2px;
+}

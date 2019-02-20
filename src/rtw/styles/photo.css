@@ -1,0 +1,142 @@
+DIV.main {
+    text-align: center;
+    width: 720px !important;
+}
+
+DIV.add {
+    width: 715px !important;
+}
+
+DIV.subhead {
+    text-align: center;
+}
+
+/*** FRONT PAGE ***/
+
+DIV.galleryListRow {
+    clear: both;
+    padding-top: 5px;
+}
+
+DIV.galleryListName {
+    float: left;
+    width: 33%;
+    text-align: right;
+}
+
+DIV.galleryListTitle {
+    float: right;
+    width: 66%;
+    text-align: left;
+}
+
+/*** Gallery page ***/
+DIV.galleryName {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+DIV.galleryDate {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+DIV.galleryBlurb {
+    text-align: center;
+}
+
+DIV.galleryClick {
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+SPAN.galleryBack {
+
+}
+
+TABLE {
+    width: 100%;
+    border: 0pt;
+}
+
+TD {
+    font-size: inherit;
+    padding-bottom: 1em;
+    text-align: center;
+    vertical-align: top;
+}
+
+TD.edit {
+    border: 1pt solid #A155FF;
+}
+
+SPAN.thumbTitle {
+    font-weight: bold;
+}
+
+DIV.photoEdit {
+    float: right;
+    background-color: #A155FF;
+    padding: 2px;
+}
+
+DIV.clear {
+    clear: both;
+}
+
+/*** Individual Photo ***/
+
+.photoPrevNext {
+    margin-bottom: 8px;
+}
+
+IMG.prev {
+    margin-right: 10px;
+}
+
+IMG.next {
+    margin-left: 10px;
+}
+
+DIV.photoTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+DIV.photoTitleEdit {
+    margin-bottom: 5px;
+}
+
+DIV.photoImg {
+    margin-bottom: 5px;
+}
+
+DIV.photoBlurb {
+    margin-bottom: 5px;
+}
+
+DIV.photoReturn {
+    padding-top: 5px;
+    margin-bottom: 2px;
+}
+
+/*** Search Results ***/
+
+DIV.searchResultCount {
+    font-weight: bold;
+    font-size: medium;
+}
+
+TD.searchGalleryHeader {
+    text-align: center;
+    border-top: 1pt solid #A155FF;
+    border-bottom: 1pt dashed #A155FF;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}

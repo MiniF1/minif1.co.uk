@@ -1,0 +1,21 @@
+DIV.main {
+    width: 720px !important;
+}
+
+DIV.body {
+    text-align: center;
+}
+
+DIV.worldMapHeader {
+    width: 100%;
+    font-size: medium;
+    font-weight: bold;
+}
+
+DIV.worldMapBlurb {
+    text-align: center;
+}
+
+SPAN.mapRef {
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+/********** MAIN DEFINITIONS **********/
+
+DIV.navbar {
+    margin-top: 1em;
+    background-color: #cc99ff;
+    padding: 2px;
+}
+
+DIV.subhead {
+    text-align: left;
+    font-size: small;
+}
+
+DIV.footerEmailCaz {
+    float: left;
+    width: 35%;
+    text-align: left;
+}
+
+DIV.footerEmailWebby {
+    float: right;
+    width: 35%;
+    text-align: right;
+}
+
+DIV.footerCounter {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-size: x-small;
+    padding-top: 1em;
+}

@@ -1,0 +1,78 @@
+UL {
+    text-align: left;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+DIV.cazHead {
+}
+
+DIV.cazHead A:link {
+    text-decoration: none;
+}
+
+DIV.cazHead A:visited {
+    text-decoration: none;
+}
+
+DIV.cazHead A:active {
+    text-decoration: none;
+}
+
+DIV.cazHead A:hover {
+    text-decoration: none;
+}
+
+TABLE {
+    width: 100%;
+}
+
+TD {
+    width: 50%;
+    vertical-align: top;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+/* Cars page */
+
+P.left {
+    clear: left;
+    text-align: left;
+}
+
+P.right {
+    clear: right;
+    text-align: right;
+}
+
+P.left IMG {
+    float: right;
+}
+
+P.right IMG {
+    float: left;
+}
+
+P.bottom {
+    clear: both;
+}
+
+/* CV page */
+
+H1.CVhead {
+    background-color: #b8e;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+P.CV {
+    margin-top: 0px;
+    text-align: left;
+}
+
+H2.CVsubhead {
+    background-color: #b8e;
+    font-size: large;
+    font-weight: bold;
+}

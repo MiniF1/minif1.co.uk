@@ -1,0 +1,25 @@
+
+DIV.body {
+    text-align: left;
+}
+
+DIV.messageDate {
+
+    font-style: italic;
+}
+
+DIV.messageTitle {
+    font-weight: bold;
+}
+
+SPAN.messageClickForMore {
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+
+DIV.messageBody {
+    padding-bottom: 4px;
+    border-bottom: 1pt dashed #A155FF;
+    margin-bottom: 4px;
+}

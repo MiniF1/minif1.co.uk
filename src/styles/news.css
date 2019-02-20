@@ -1,0 +1,112 @@
+P.newsDate, P.newsDateHL { /* Date for any news shown */
+    background-color: #b8e;
+    color: inherit;
+    font-size: x-small;
+    text-align: left;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: black;
+    padding: 3px;
+    margin: 0px;
+}
+
+P.newsDateHL {
+    font-weight: bold;
+}
+
+P.newsBlurb { /* Main body of news */
+    background-color: inherit;
+    color: inherit;
+    margin-top: 0px;
+    text-align: left;
+}
+
+
+DIV.newsArchFooter { /* footer */
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-top: 1pt solid black;
+}
+
+DIV.newsArchFooter A:link {
+    text-decoration: none;
+}
+
+DIV.newsArchFooter A:visited {
+    text-decoration: none;
+}
+
+DIV.newsArchFooter A:active {
+    text-decoration: none;
+}
+
+DIV.newsArchFooter A:hover {
+    text-decoration: none;
+}
+
+DIV.comments {
+    border-width: 1pt 0pt;
+    border-style: solid;
+    border-color: black;
+    margin: 1em 0em;
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+DIV.comments P.commentsHead {
+    font-size: smaller;
+    font-weight: bold;
+    margin: 0;
+}
+
+P.commentDetails {
+    background-color: #b8e;
+    color: inherit;
+    font-size: x-small;
+    text-align: left;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: black;
+    padding: 1px;
+    margin: 1em 0px 0px 0px;
+}
+
+P.commentDetails#me {
+    background-color: #d9e;
+}
+
+P.commentBody {
+    margin: 0px;
+}
+
+P.commentNone {
+    margin: 0px;
+    text-align: center;
+}
+
+FORM {
+    text-align: center;
+    margin-top: 0;
+}
+
+TABLE {
+    border: 0;
+    margin-top: 1em;
+}
+
+TABLE TD {
+    border: 0;
+    text-align: left;
+}
+
+TABLE TD.desc {
+    text-align: right;
+}
+
+P.postMessage {
+    margin: 0 0 1em 0;
+    background-color: #f00;
+    font-weight: bold;
+    padding: 2px;
+}

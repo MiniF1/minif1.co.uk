@@ -1,0 +1,161 @@
+/********** MAIN DEFINITIONS **********/
+BODY {
+    background-color: #ffff99;
+    color: #000000;
+    font-family: Verdana, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+A:link {
+    background-color: inherit;
+    color: #9900ff;
+    text-decoration: none;
+}
+
+A:visited {
+    background-color: inherit;
+    color: #990099;
+    text-decoration: none;
+}
+
+A:active {
+    background-color: inherit;
+    color: #990099;
+    text-decoration: none;
+}
+
+A:hover {
+    background-color: inherit;
+    color: #000066;
+    text-decoration: underline;
+}
+
+P {
+    background-color: inherit;
+    color: #000000;
+    font-family: Verdana, sans-serif;
+    font-size: small;
+}
+
+IMG {
+    border: 0pt;
+    display: run-in;
+}
+
+IMG.inline {
+    vertical-align: middle;
+}
+
+/* Some pages, pictures inline with text, aligns properly */
+
+DIV.main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+DIV.header {
+    position: relative;
+    color: purple;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+DIV.subhead {
+    margin-top: 0.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+DIV.body {
+    background-color: #cc99ff;
+    padding: 2px;
+}
+
+DIV.return {
+    background-color: #cc99ff;
+    padding: 1px;
+    font-size: smaller;
+}
+
+DIV.footer {
+    margin-top: 1em;
+    text-align: center;
+}
+
+DIV.add {
+    background-color: #A155FF;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+DIV.add A:link {
+    color: #003;
+}
+
+DIV.add A:visited {
+    color: #003;
+}
+
+DIV.add A:active {
+    color: #003;
+}
+
+DIV.add A:hover {
+    color: #009;
+}
+
+DIV.edit {
+    background-color: #A155FF;
+    float: right;
+}
+
+DIV.pageHeader {
+    font-size: larger;
+}
+
+/* Left box for page number */
+DIV.pageNumber {
+    float: left;
+    font-size: x-small;
+    text-align: left;
+}
+
+/* Right box for list of pages */
+DIV.pageLinks {
+    float: right;
+    text-align: right;
+    font-size: small;
+}
+
+.counter {
+    font-size: smaller;
+}
+
+DIV.pageLinks A:link {
+    text-decoration: none;
+}
+
+DIV.pageLinks A:visited {
+    text-decoration: none;
+}
+
+DIV.pageLinks A:active {
+    text-decoration: none;
+}
+
+DIV.pageLinks A:hover {
+    text-decoration: none;
+}
+
+SPAN.necessary {
+    font-weight: bold;
+}
+
+.postReminder {
+    font-size: xx-small;
+    font-weight: bold;
+}
