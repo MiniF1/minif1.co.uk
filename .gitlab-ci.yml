@@ -28,7 +28,7 @@ build-prod:
     - docker tag $CONTAINER_FRONTEND_PROD $CONTAINER_FRONTEND_PROD_LATEST
     - docker push $CONTAINER_FRONTEND_PROD_LATEST
   only:
-    - docker
+    - master
 
 deploy:
   image:
@@ -61,4 +61,4 @@ deploy:
   after_script:
     - rm -rf $DOCKER_CERT_PATH
   only:
-    - docker
+    - master
