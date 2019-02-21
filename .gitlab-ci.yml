@@ -23,7 +23,7 @@ build-prod:
     CONTAINER_FRONTEND_PROD: $CI_REGISTRY_IMAGE/frontend:$CI_COMMIT_SHA
     CONTAINER_FRONTEND_PROD_LATEST: $CI_REGISTRY_IMAGE/frontend:latest
   script:
-    - DOCKER_BUILDKIT=1 docker build --progress=plain --pull --target web-production -t $CONTAINER_FRONTEND_PROD -f resources/docker/Dockerfile .
+    - DOCKER_BUILDKIT=1 docker build --progress=plain --pull --target web-production -t $CONTAINER_FRONTEND_PROD -f Dockerfile .
     - docker push $CONTAINER_FRONTEND_PROD
     - docker tag $CONTAINER_FRONTEND_PROD $CONTAINER_FRONTEND_PROD_LATEST
     - docker push $CONTAINER_FRONTEND_PROD_LATEST
