@@ -2,7 +2,7 @@ version: '2.4'
 services:
   web:
     container_name: minif1-web
-    image: registry.gitlab.com/rickselby-hosted-websites/minif1/php:latest
+    image: registry.gitlab.com/rickselby-hosted-websites/minif1/frontend:latest
     restart: always
     environment:
       VIRTUAL_HOST: www.minif1.co.uk
