@@ -3,27 +3,24 @@ stages:
   - deploy
 
 include:
-  - project: 'rickselby-linode-setup/nginx-proxy'
-    file: '/.gitlab-ci-template.yml'
+  - project: 'rickselby-linode-setup/gitlab-ci-templates'
+    file: '/.deploy-template.yml'
 
 variables:
   CONTAINER_PHP_CI: $CI_REGISTRY_IMAGE/php-ci:$CI_COMMIT_SHA
-  CONTAINER_FRONTEND_PROD_LATEST: $CI_REGISTRY_IMAGE/frontend:latest
+  CONTAINER_FRONTEND_PROD: $CI_REGISTRY_IMAGE/frontend:$CI_COMMIT_SHA
+  COMPOSE_FILE_PATH: docker-compose.production.yml
 
 build-prod:
   image: docker:latest
   services:
     - docker:dind
   stage: build
-  variables:
-    CONTAINER_FRONTEND_PROD: $CI_REGISTRY_IMAGE/frontend:$CI_COMMIT_SHA
   before_script:
     - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" "$CI_REGISTRY" --password-stdin
   script:
     - DOCKER_BUILDKIT=1 docker build --progress=plain --pull --target web-production -t $CONTAINER_FRONTEND_PROD -f Dockerfile .
     - docker push $CONTAINER_FRONTEND_PROD
-    - docker tag $CONTAINER_FRONTEND_PROD $CONTAINER_FRONTEND_PROD_LATEST
-    - docker push $CONTAINER_FRONTEND_PROD_LATEST
   only:
     - master
 
@@ -31,8 +28,7 @@ deploy:
   extends: .docker-template
   stage: deploy
   script:
-    - eval $COMPOSE_COMMAND -f docker-compose.production.yml pull
-    - eval $COMPOSE_COMMAND -f docker-compose.production.yml up -d --remove-orphans
+    - eval $COMPOSE_COMMAND pull
+    - eval $COMPOSE_COMMAND up -d --remove-orphans
   only:
     - master
-

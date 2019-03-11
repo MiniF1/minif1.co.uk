@@ -2,7 +2,7 @@ version: '2.4'
 services:
   web:
     container_name: minif1-web
-    image: $CONTAINER_FRONTEND_PROD_LATEST
+    image: $CONTAINER_FRONTEND_PROD
     restart: always
     environment:
       VIRTUAL_HOST: ${VIRTUAL_HOST}
