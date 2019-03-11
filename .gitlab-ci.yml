@@ -4,7 +4,7 @@ stages:
 
 include:
   - project: 'rickselby-linode-setup/gitlab-ci-templates'
-    file: '/.deploy-template.yml'
+    file: '/deploy-template.yml'
 
 variables:
   CONTAINER_PHP_CI: $CI_REGISTRY_IMAGE/php-ci:$CI_COMMIT_SHA
