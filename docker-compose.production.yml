@@ -2,23 +2,25 @@ version: '2.4'
 services:
   web:
     container_name: minif1-web
-    image: $CONTAINER_FRONTEND_PROD
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: web-production
     restart: always
     environment:
-      VIRTUAL_HOST: ${VIRTUAL_HOST}
-      LETSENCRYPT_HOST: ${VIRTUAL_HOST}
-      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+      VIRTUAL_HOST: www.minif1.co.uk
+      LETSENCRYPT_HOST: www.minif1.co.uk
+      LETSENCRYPT_EMAIL:
   redirect:
     container_name: minif1-redirect
     image: morbz/docker-web-redirect
     restart: always
     environment:
-      VIRTUAL_HOST: ${REDIRECT_VIRTUAL_HOST}
-      LETSENCRYPT_HOST: ${REDIRECT_VIRTUAL_HOST}
-      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
-      REDIRECT_TARGET: ${VIRTUAL_HOST}
+      VIRTUAL_HOST: minif1.co.uk
+      LETSENCRYPT_HOST: minif1.co.uk
+      LETSENCRYPT_EMAIL:
+      REDIRECT_TARGET: www.minif1.co.uk
 
 networks:
   default:
-    external:
-      name: minif1
+    name: minif1
